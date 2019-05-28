@@ -1,0 +1,63 @@
+html, body {
+  height:99%;
+  padding:0;
+  margin:0;
+  overflow:hidden;
+}
+.all {
+  width:100%;
+  min-height:100%;
+  background:MidnightBlue;
+  position:relative;
+}
+.star {
+  width:2px;
+  height:2px; 
+  background-color:rgba(255,255,255,1);
+  border-radius:50%;
+  background: radial-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+  display:inline-block;
+  position: absolute;
+}
+.nebuleuse {
+  min-height:50%;
+  height:50%;
+  position: absolute;
+  top:25%;
+  background:rgba(255,255,255,0);
+}
+.pink {
+  background: radial-gradient(rgba(255,141,161,1), rgba(255,255,255,0));
+  width:3px;
+  height:3px;
+}
+.yellow {
+  background: radial-gradient(rgba(255,255,117,1), rgba(255,255,255,0));
+  width:4px;
+  height:4px;
+}
+.naine {
+  width:5px;
+  height:5px;
+}
+.soleil {
+  width:6px;
+  height:6px;
+}
+.novae {
+  width:7px;
+  height:7px;
+}
+.geante {
+  width: 17px; 
+  height: 17px;
+  background: radial-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0));
+}
+@keyframes mymove {
+    to {top:100%;left: 0;}
+}
+.-- {
+  animation-name: mymove;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+}
