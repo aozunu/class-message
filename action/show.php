@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS3图片相册立体阴影效果</title>
+<title>同学相册</title>
 <link rel="stylesheet" href="css/reset.css" media="screen" />
 <link rel="stylesheet" href="css/lanrenzhijia.css" media="screen" />
 <link rel="stylesheet" href="css/css3_3d.css" media="screen" />
@@ -19,7 +19,7 @@ if (!Modernizr.csstransforms) {
 <body>
   
 <div id="container">
-  <button style="margin-top:50px;"><a href="/class/index.php" class='more'>返回首页</a></button>
+  <button style="margin-top:50px;"><a href="/index.php" class='more'>返回首页</a></button>
   <script>
   $( "button" ).button();
   </script>
@@ -52,6 +52,7 @@ if (!Modernizr.csstransforms) {
             电话：".$mergearr[$iii]['phone']."<br/>
             爱好：".$mergearr[$iii]['aihao']."<br/>
             学校：".$mergearr[$iii]['school']."<br/>
+            地址：".$mergearr[$iii]['adris']."<br/>
           </p>
           <a href='#' class='close'>x</a> </div>
         <span class='backface'></span>

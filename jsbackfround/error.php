@@ -14,7 +14,7 @@
 		<h1 style="color:red;">
 			<?php
 				function tiao(){
-					header("refresh:3;url=/class/index.php");
+					header("refresh:3;url=/index.php");
 					print('<br/>正在加载，请稍等...<br>三秒后自动跳转。');
 				}
 				if ($_GET['mes'] == 'nulll') {

@@ -6,7 +6,7 @@ $adris=$_POST['adris'];
 $aihao=$_POST['aihao'];
 $school=$_POST['school'];
 #连接数据库
-$link = mysqli_connect('localhost','root','root')or die("连接数据库失败");
+$link = mysqli_connect('localhost','root','123')or die("连接数据库失败");
 mysqli_select_db($link,'class');
 mysqli_set_charset($link,'utf8');
 // $sql = 'select * from 表名';
@@ -101,14 +101,14 @@ if($ac == "inputt"){
 						$semess = mysqli_query($link,$checksql);
 						$rows = mysqli_num_rows($semess);
 						if($rows){
-							header("Location:/class/index.php?messs=chonfu");
+							header("Location:/index.php?messs=chonfu");
 							die;
 						}
 
 						#进行同学信息的录入操作
 						$sql = "INSERT INTO student(name,phone,adris,aihao,school,img) VALUES ('$name','$phone','$adris','$aihao','$school','$imgurl')";
 						mysqli_query($link,$sql)or die('添加数据出错：'.mysql_error());
-						header("Location:/class/index.php?messs=sceess");
+						header("Location:/index.php?messs=sceess");
 		            }        
 		    }else{
 		        // echo"文件类型不对";
@@ -127,14 +127,14 @@ if($ac == "inputt"){
 		$semess = mysqli_query($link,$checksql);
 		$rows = mysqli_num_rows($semess);
 		if($rows){
-			header("Location:/class/index.php?messs=chonfu");
+			header("Location:/index.php?messs=chonfu");
 			die;
 		}
 
 		#进行同学信息的录入操作
 		$sql = "INSERT INTO student(name,phone,adris,aihao,school) VALUES ('$name','$phone','$adris','$aihao','$school')";
 		mysqli_query($link,$sql)or die('添加数据出错：'.mysql_error());
-		header("Location:/class/index.php?messs=sceess");
+		header("Location:/index.php?messs=sceess");
 	}
 }
 mysqli_close($link);
