@@ -9,6 +9,7 @@
 #
 DROP DATABASE IF EXISTS `class`;
 CREATE DATABASE `class` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `class`;
 DROP TABLE IF EXISTS `student`;
 CREATE TABLE `student` (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '同学id',
